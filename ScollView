@@ -1,0 +1,31 @@
+import React from 'react';
+import { Image, ScrollView, Text, StyleSheet } from 'react-native';
+
+export default function App() {
+  return (
+    <ScrollView>
+      <Text style={styles.txt}>ScrollView Example</Text>
+      <Image style={styles.img} source={require('./assets/react.png')} />
+      <Image style={styles.img} source={require('./assets/python.png')} />
+      <Image style={styles.img} source={require('./assets/Design.png')} />
+      <Image style={styles.img} source={require('./assets/facts.png')} />
+
+      <Text style={styles.txt}>Follow us for more</Text>
+    </ScrollView >
+  );
+
+};
+const styles = StyleSheet.create(
+  {
+    img:
+    {
+      width: 400,
+      height: 800
+    },
+    txt:
+    {
+      fontSize: 40
+    }
+
+  }
+);
